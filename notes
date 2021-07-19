@@ -1,0 +1,34 @@
+Classifications 
+
+Logistic Regression
+Predicting categorical values 
+ie based on age, will be person perform an action(Yes/No), open an account (Yes/No) 
+Model this. run a linear regression line through a dataset like this doesnt solve the problem. 
+
+Instead of predicting, predict the likelihood or probability of that person 
+taking that offer. 
+so lets say there is an 80 percent chance that he will sign up. 
+so thinking abt it that way, the linear regression line. 
+basically saying, anybody between ages or where crossing the horizontal axis 
+is 0(not sign up)(age 35) and 1(going to sign up)(age 55)
+ages between that have probabilities of taking that offer and it increaes as we 
+move to the right. 
+so we have to adjust the linear regression line 
+anyone one below ages 35 not going to sign up 
+anyone above age 55 is going to sign up. 
+
+Linear regression equation = y = bo + b1 * x 
+sigmoid function, p = 1 / 1 + e pow -y 
+apply sigmoid function to the logistic regression equation, and solve for y 
+ln(p / 1 - p) = b0 + b1 * x, this is the formular of logistic regression. 
+and this will convert the straight line in dataset to S-like line in the dataset. 
+this is best fitting line, that can fit the dataset, 
+
+Logistic regression graph 
+X - axis(Probabilities) 
+Y - axis (values) 
+so lets say value is 20, phat is 0.7% meaning there is 0.7% chance a user who is 20 years will not sign up
+
+inside logistic regression line, seperate it (0.5) 
+anything below the line is projected downwards which is 0 
+anything above the line is projected upwards which is 1  
